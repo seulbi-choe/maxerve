@@ -1,0 +1,8 @@
+.submenu.inactive {
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.5s ease-in-out;
+}
+.submenu.active {
+   max-height: 500px; 
+}

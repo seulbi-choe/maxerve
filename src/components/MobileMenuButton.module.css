@@ -1,0 +1,40 @@
+.MenuOpenBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 30px;
+  height: 100%;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  transform: translateX(-16px);
+}
+.openBar {
+  height: 2px;
+  background-color: #333;
+}
+.MenuOpenBtn .openBar:nth-child(2) {
+  width: 24px;
+  margin-left: auto;
+}
+.MenuCloseBtn {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.closeBar {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.closeBar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.closeBar:nth-child(2) {
+  transform: rotate(-45deg);
+}

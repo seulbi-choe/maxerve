@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/pretendardvariable.woff2') format('woff2');
+  font-weight: 1 1000;
+  font-style: normal;
+  font-display: swap;
+}
+@layer theme, base, components, utilities;
+@theme {
+  --color-gray555: #555; 
+}
+@layer theme {
+  .bg-red {
+    background-color: #b00031;
+  }
+  .bg-gray-333 {
+    background-color: #333;
+  }
+  .bg-gray-ddd {
+    background-color: #ddd;
+  }
+}
+
+* {
+  letter-spacing: -1px;
+}
+img {
+  object-fit: contain;
+}
+body {
+  font-family: 'Pretendard';
+}
+main {
+  width: 100%;
+  height: 150vh;
+  background-image: url("https://imgnn.seoul.co.kr/img/upload/2024/08/06/SSC_20240806100040.jpg");
+  background-size: cover;
+}
+header {
+  transition: .3s;
+}
